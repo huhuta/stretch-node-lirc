@@ -1,0 +1,6 @@
+.eslintrc.json
+node_modules
+.travis.yml
+Dockerfile
+package-lock.json
+.git

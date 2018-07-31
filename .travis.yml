@@ -1,0 +1,11 @@
+sudo: enabled
+language: node_js
+node_js:
+  - 8.11.3
+install: true
+script: true
+script:
+  - curl -s https://gist.githubusercontent.com/huhuta/acd5ed0dc04c9b29db797284e3cdda05/raw/8fecc361908f6930ab593f53c8c2f514078e08d5/travis-ci-docker-multiarch-push.sh | /bin/bash -s
+env:
+  - OWNER=${TRAVIS_REPO_SLUG:0:6} REPO=${TRAVIS_REPO_SLUG:7}
+
