@@ -1,4 +1,4 @@
-FROM huhuta/node-lirc
+FROM node:8-stretch
 RUN mkdir -p /app
 COPY ./ /app
 RUN cd /app && mv ./qemu-arm-static /usr/bin \
