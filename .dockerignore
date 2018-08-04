@@ -1,6 +1,6 @@
 .eslintrc.json
 node_modules
-.travis.yml
+xxx_travis.yml
 Dockerfile
 package-lock.json
 .git
