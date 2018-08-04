@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-lirc
+spec:
+  containers:
+  - name: node-lirc
+    image: huhuta/node-lirc
+    ports:
+     - containerPort: 4000
+    securityContext:
+      privileged: true

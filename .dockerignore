@@ -3,4 +3,4 @@ node_modules
 xxx_travis.yml
 Dockerfile
 package-lock.json
-.git
+*yaml

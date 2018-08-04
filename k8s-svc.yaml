@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    cleanup: "true"
+    deployed-with: skaffold
+    docker-api-version: "1.38"
+    skaffold-builder: local
+    skaffold-deployer: kubectl
+    skaffold-tag-policy: git-commit
+  name: node-lirc
+spec:
+  ports:
+  - port: 4000
+    protocol: TCP
+    targetPort: 4000
+  selector:
+    cleanup: "true"
+    deployed-with: skaffold
+    docker-api-version: "1.38"
+    skaffold-builder: local
+    skaffold-deployer: kubectl
+    skaffold-tag-policy: git-commit
+  type: NodePort
+status:
+  loadBalancer: {}
